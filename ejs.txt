@@ -1,0 +1,15 @@
+**TEMPLATES EJS**
+-embedded javascript
+koristimo html sa ekstenzijom .ejs
+koristimo ga kako bi implementrirali javascript kod unutar htmla
+primjerice kada radimo template di nam se prikaz mjenja ovisno o nekim parametrima a sve ostalo ostaje isto
+koristimo tag <%= %> u svakoj liniji gdje je javascript kod
+
+korištenje sa expressom
+npm install ejs
+app.set('view engine', 'ejs');
+app.get('/', (req, res) => {
+  res.render('index', {foo: 'FOO'});
+});
+
+**SCOPE**
